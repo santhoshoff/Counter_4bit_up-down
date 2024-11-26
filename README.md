@@ -1,4 +1,4 @@
-# Counter_4bit_up-down
+# EXP-2 Counter_4bit_up-down
 
 ## Aim:
 
@@ -60,6 +60,9 @@ Functional Simulation:
 
 	Use Save option or Ctrl+S to save the code or click on the save option from the top most right corner and close the text file.
 
+
+![p2](https://github.com/user-attachments/assets/c1357c4d-093f-475f-86cc-7cca7a10e742)
+
 ## Creating Test bench:
 
 	Similarly, create your test bench using gedit <filename_tb>.v or <filename_tb>.vhdl to open a new blank document (4bitup_down_count_tb.v).
@@ -81,6 +84,10 @@ Select Multiple Step and then select “Create cds.lib File” as shown in below
 
 Click the cds.lib file and save the file by clicking on Save option
 
+
+![373608146-0b7df53a-5e16-45c5-b2a8-df39ac285f37](https://github.com/user-attachments/assets/f7b8b613-978b-4c06-a495-39fc20812b1c)
+
+
 ## Fig 4: cds.lib file Creation
 
 	Save cds.lib file and select the correct option for cds.lib file format based on the  HDL Language and Libraries used.
@@ -88,6 +95,10 @@ Click the cds.lib file and save the file by clicking on Save option
 	Select “Don’t include any libraries (verilog design)” from “New cds.lib file” and click on “OK” as in below figure
 
 	We are simulating verilog design without using any libraries
+
+![386822309-df305bab-30c9-45a1-a8f5-8750149d01ce](https://github.com/user-attachments/assets/f6b9a899-cee0-4c43-a528-80f1d87bc111)
+
+
 
 ## Fig 5: Selection of Don’t include any libraries
 
@@ -98,10 +109,16 @@ Click the cds.lib file and save the file by clicking on Save option
 	Left side you can see the HDL files. Right side of the window has worklib and snapshots directories listed.
 
 	Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation
+     ![373848605-29efc733-efb9-4c52-acf3-6518d4ab0390 (1)](https://github.com/user-attachments/assets/f751c07c-aaf3-46d9-a3b0-fa9dee569c08)
+
 
 ## Fig 6: Nclaunch Window
 
 To perform the function simulation, the following three steps are involved Compilation, Elaboration and Simulation.
+
+
+![373681850-8ab3ba52-18cf-4256-aa25-dbbe97336043](https://github.com/user-attachments/assets/2d5b7bbd-4403-4259-bc3c-592c726b1c7c)
+
 
 ## Step 1: Compilation:– Process to check the correct Verilog language syntax and usage 
 
@@ -131,6 +148,8 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 
 	The cds.lib file is an ASCII text file. It defines which libraries are accessible and where they are located.
 It contains statements that map logical library names to their physical directory paths. For this Design, you will define a library called “worklib”
+![373333571-9088a5e4-cb78-4775-b120-b1e93933771d](https://github.com/user-attachments/assets/49af0933-ca12-425a-86a7-55dda723f9b0)
+
 
 ## Step 2: Elaboration:– To check the port connections in hierarchical design 
 
@@ -153,6 +172,8 @@ It contains statements that map logical library names to their physical director
 	After elaboration the file will come under snapshot. Select the test bench and simulate it. 
 
 ## Fig 8: Elaboration Launch Option
+![Screenshot 2024-10-03 163920](https://github.com/user-attachments/assets/fd0558d8-b940-4cc1-9c12-2515ee597e6b)
+
 
 ### Step 3: Simulation: – Simulate with the given test vectors over a period of time to observe the output behaviour. 
 
@@ -165,12 +186,12 @@ It contains statements that map logical library names to their physical director
 	Steps for simulation – Run the simulation command with simulator options
 
 ## Fig 9: Design Browser window for simulation
+![Screenshot 2024-10-03 163938](https://github.com/user-attachments/assets/3b731dfe-49e6-405f-8e37-abed600ad456)
+
 
 ## Fig 10: Simulation Waveform Window
-
-## Fig 11: Simulation Waveform Window
+![Screenshot 2024-10-03 163945](https://github.com/user-attachments/assets/5e3de9c0-c968-4bae-b46b-39e1fb1f4d89)
 
 ### Result
 
 The functionality of a 4bit_up-down asynchronous reset Counter was successfully verified using a test bench and simulated with the nclaunch tool.
-
